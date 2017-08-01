@@ -1,14 +1,10 @@
 // resets
-* {
-  z-index: 1;
-}
-
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
-  color: #fefefe;
+  color: #222;
   background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 1), rgba(221, 67, 37, 1));
   font-family: sans-serif;
 }

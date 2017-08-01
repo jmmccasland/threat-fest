@@ -5,33 +5,22 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'reset';
 @import 'layout';
+@import 'top-nav';
 
-// Top Nav
-.section--top-nav {
-  // position: fixed;
-  // top: 0;
-  width: 100%;
-  padding-top: 2rem;
-  // height: 100px;
+.wrapper {
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  margin: 2rem;
+  background: #fefefe;
 }
 
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-  &__right {
-    color: #fefefe;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.25rem;
-    text-transform: uppercase;
 
-    > * + * {
-      margin-left: 1rem;
-    }
+
+
+// INFO
+.info {
+  &__description {
+    font-size: 1.5rem;
   }
-}
-
-.logo {
-  max-width: 25rem;
 }
