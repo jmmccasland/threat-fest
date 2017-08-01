@@ -7,20 +7,34 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'layout';
 @import 'top-nav';
 
+
 .wrapper {
-  width: calc(100vw - 4rem);
-  height: calc(100vh - 4rem);
+  width: calc(100 - 4rem);
   margin: 2rem;
+  padding: 2rem;
   background: #fefefe;
 }
 
-
-
-
-
 // INFO
 .info {
-  &__description {
-    font-size: 1.5rem;
+
+  > * + * {
+    margin-top: 4rem;
+  }
+
+  &__item {
+    // width: 65%;
+
+    &__title {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    &__description {
+      flex-basis: 50%;
+      font-size: 1.5rem;
+    }
   }
 }

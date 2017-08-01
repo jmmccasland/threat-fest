@@ -1,7 +1,7 @@
 // Top Nav
 .section--top-nav {
   width: 100%;
-  padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .top-nav {
@@ -11,9 +11,10 @@
 
   &__right {
     font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     > * {
       padding: 2.5px;
@@ -30,5 +31,5 @@
 }
 
 .selected {
-  border-bottom: 5px solid rgba(221, 67, 37, 1);
+  border-bottom: 4px solid rgba(221, 67, 37, 1);
 }
