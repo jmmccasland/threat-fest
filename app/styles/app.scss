@@ -1,37 +1,37 @@
-// @import 'yoga';
-// @import 'normalize';
-
-
 // Variables
 
-
-
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import url('https://fonts.googleapis.com/css?family=Rubik:500');
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'reset';
 @import 'layout';
 
+// Top Nav
+.section--top-nav {
+  // position: fixed;
+  // top: 0;
+  width: 100%;
+  padding-top: 2rem;
+  // height: 100px;
+}
 
-// Background Image
-.bg-img {
-  margin: 0;
-  background: url('./images/bands/pinion.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  color: #fefefe;
-  font-family: 'Rubik', sans-serif;
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 1), rgba(221, 67, 37, 1));
-    content: '';
-    opacity: 0.8;
+  &__right {
+    color: #fefefe;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+    > * + * {
+      margin-left: 1rem;
+    }
   }
+}
+
+.logo {
+  max-width: 25rem;
 }
