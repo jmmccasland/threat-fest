@@ -1,0 +1,25 @@
+// hero
+.section--hero {
+  padding-top: 0;
+  // background: linear-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 1)), url('./images/bands/pinion.jpg');
+  // background: linear-gradient(rgba(86, 220, 252, 0.65), rgba(86, 220, 252, 0.65)), url('./images/bands/pinion.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  // height: 70vh;
+
+  &__logo {
+    display: block;
+    width: 40rem;
+    margin: 0 auto;
+    padding: 10rem 0 7rem;
+    // position: absolute;
+    // top: 17rem;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+}
