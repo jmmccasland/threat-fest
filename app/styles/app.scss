@@ -3,8 +3,7 @@
 
 
 // Variables
-$c-pink: rgb(196,75,106);
-$c-orange: rgb(224,126,59);
+
 
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
@@ -13,37 +12,26 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'reset';
 @import 'layout';
-@import 'hero';
-@import 'info';
 
 
-.tickets {
-  // transform: skew(0, 2deg);
-}
+// Background Image
+.bg-img {
+  margin: 0;
+  background: url('./images/bands/pinion.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #fefefe;
+  font-family: 'Rubik', sans-serif;
 
-.ticket-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  // align-items: center;
-  margin: -1rem;
-
-  &__item {
-    flex-basis: calc(100% / 3 - 2rem);
-    flex-grow: 1;
-    margin: 1rem;
-    min-width: 18rem;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 1), rgba(221, 67, 37, 1));
+    content: '';
+    opacity: 0.8;
   }
-}
-
-.card {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // border: 3px solid #fefefe;
-  // border-radius: 0.2rem;
-  padding: 4rem 1rem ;
-  background: linear-gradient(-45deg, $c-orange, $c-pink);
-  text-align: center;
 }
