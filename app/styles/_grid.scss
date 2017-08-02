@@ -8,10 +8,8 @@
 
   &__item {
     position: relative;
-    flex-basis: calc(100% / 3 - 2rem);
-    flex-grow: 1;
-    min-width: 22.5rem;
-    height: 22.5rem;
+    width: calc(100% / 3 - 2rem);
+    height: 20rem;
     margin: 1rem;
 
     > img {
@@ -39,7 +37,6 @@
   width: 100%;
   margin: 0;
   padding: 1rem;
-  // background: $t-black;
   background: $c-black;
   color: $c-white;
 
@@ -49,5 +46,31 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: lowercase;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .grid__item {
+    height: 17.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid__item {
+    width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (max-width: 765px) {
+  .grid__item {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid__item {
+    width: 100%;
   }
 }
