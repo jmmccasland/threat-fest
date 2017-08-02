@@ -19,9 +19,16 @@
 
 // Top Nav Components
 .logo {
-  max-width: 25rem;
+  width: 25rem;
 }
 
 .selected {
   border-bottom: 4px solid $c-orange;
+}
+
+
+@media (max-width: 625px) {
+  .logo {
+    max-width: 10rem;
+  }
 }

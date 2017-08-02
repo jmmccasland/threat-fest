@@ -26,7 +26,17 @@
   background: linear-gradient(to bottom right, $c-blue, $c-orange);
   z-index: 100;
 
-  .menu__overlay__links {
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    cursor: pointer;
+
+  }
+
+  &__links {
     display: flex;
     flex-direction: column;
     align-items: center;
