@@ -20,6 +20,15 @@
       object-fit: cover;
       object-position: bottom;
     }
+
+    // Object adjustments
+     > .object--top {
+      object-position: top;
+    }
+
+     > .object--center {
+      object-position: center;
+    }
   }
 }
 
