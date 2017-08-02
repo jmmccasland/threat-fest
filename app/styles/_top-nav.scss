@@ -14,21 +14,68 @@
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: lowercase;
+  }
+}
 
-    > * {
-      padding: 2.5px;
-    }
+// Menu
+.menu {
+  &__links {
+    padding: 2.5px;
 
     > * + * {
       margin-left: 1rem;
     }
   }
+
+  &__btn {
+    display: none;
+  }
 }
 
+// Top Nav Components
 .logo {
   max-width: 25rem;
 }
 
 .selected {
   border-bottom: 4px solid $c-orange;
+}
+
+
+// Media Queries
+@media (max-width: 900px) {
+
+  .menu {
+
+    &__btn { // .menu__btn
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      > * + * {
+        margin-left: 1rem;
+      }
+
+      &__lines { // .menu__btn__lines
+        * {
+          margin-top: 0.25rem;
+        }
+
+        > .line {
+          position: relative;
+          width: 1.5rem;
+          height: 2px;
+          border-radius: 0.3rem;
+          background: $c-black;
+        }
+      }
+    }
+
+    &__links { // .menu__btn__links
+      display: none;
+    }
+  } // #end media query 900px
+
+
 }
