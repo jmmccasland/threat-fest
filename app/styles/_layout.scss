@@ -10,11 +10,17 @@
 
 .wrapper {
   width: calc(100 - 4rem);
+  max-width: 100rem;
   margin: 2rem;
   padding: 2rem;
   background: $c-white;
 }
 
+@media (min-width: 1600px) {
+  .wrapper {
+    margin: 2rem auto;
+  }
+}
 
 @media (max-width: 625px) {
   .wrapper {
