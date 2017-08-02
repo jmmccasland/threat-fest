@@ -1,0 +1,23 @@
+// INFO
+.info {
+
+  > * + * {
+    margin-top: 2rem;
+  }
+
+  &__item {
+    // width: 65%;
+
+    &__title {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    &__description {
+      flex-basis: 50%;
+      font-size: 1.5rem;
+    }
+  }
+}

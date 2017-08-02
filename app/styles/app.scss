@@ -6,6 +6,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'reset';
 @import 'layout';
 @import 'top-nav';
+@import 'info';
 
 
 .wrapper {
@@ -15,26 +16,56 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   background: #fefefe;
 }
 
-// INFO
-.info {
+// hero
+.hero {
+  width: 100%;
+  height: 30rem;
+  transform: rotate(180deg);
+  background: url('./images/bands/pinion.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-  > * + * {
-    margin-top: 4rem;
-  }
+// Grid
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem;
 
   &__item {
-    // width: 65%;
+    position: relative;
+    flex-basis: calc(100% / 3 - 2rem);
+    flex-grow: 1;
+    height: 22.5rem;
+    margin: 1rem;
 
-    &__title {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 4rem;
-      font-weight: bold;
-      text-transform: lowercase;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
     }
+  }
+}
 
-    &__description {
-      flex-basis: 50%;
-      font-size: 1.5rem;
-    }
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  color: #fefefe;
+  background: rgba(0, 0, 0, 0.75);
+
+  > p {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: lowercase;
   }
 }
