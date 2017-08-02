@@ -1,4 +1,9 @@
 // Variables
+$c-black: #222;
+$c-white: #fefefe;
+$c-orange: #dd4224;
+$c-blue: #002f4b;
+$t-black: rgba(0, 0, 0, 0.75);
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
@@ -13,7 +18,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   width: calc(100 - 4rem);
   margin: 2rem;
   padding: 2rem;
-  background: #fefefe;
+  background: $c-white;
 }
 
 // hero
@@ -58,8 +63,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   width: 100%;
   margin: 0;
   padding: 1rem;
-  color: #fefefe;
-  background: rgba(0, 0, 0, 0.75);
+  background: $t-black;
+  color: $c-white;
 
   > p {
     margin: 0;
