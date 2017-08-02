@@ -7,3 +7,10 @@
   max-width: 65rem;
   margin: 0 auto;
 }
+
+.wrapper {
+  width: calc(100 - 4rem);
+  margin: 2rem;
+  padding: 2rem;
+  background: $c-white;
+}
