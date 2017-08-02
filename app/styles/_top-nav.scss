@@ -27,6 +27,12 @@
 }
 
 
+@media (max-width: 900px) {
+  .logo {
+    max-width: 17.5rem;
+  }
+}
+
 @media (max-width: 625px) {
   .logo {
     max-width: 10rem;
