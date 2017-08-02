@@ -21,3 +21,15 @@
   margin: 0;
   background: linear-gradient(to top left, $t-blue, $t-orange);
 }
+
+@media (max-width: 900px) {
+  .hero {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .hero {
+    height: 15rem;
+  }
+}
