@@ -25,3 +25,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   height: 300px;
   background: linear-gradient(to bottom right, $c-blue, $c-orange);
 }
+
+.faq {
+  margin-bottom: 2rem;
+
+  > strong {
+    display: inline-block;
+    font-size: 1.75rem;
+  }
+}
