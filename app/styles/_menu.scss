@@ -30,6 +30,7 @@
     position: absolute;
     top: 2rem;
     right: 2rem;
+    padding: 5px 10px;
     font-size: 3rem;
     font-weight: 400;
     cursor: pointer;
@@ -56,10 +57,10 @@
 @media (max-width: 900px) {
   .menu {
     &__btn {
-      // .menu__btn
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 5px 10px;
       cursor: pointer;
 
       > * + * {
