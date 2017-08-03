@@ -20,20 +20,5 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'hero';
 @import 'info';
 @import 'grid';
-
-#map {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 1rem;
-  background: linear-gradient(to bottom right, $c-blue, $c-orange);
-}
-
-.faq {
-  margin-bottom: 2rem;
-
-  > strong {
-    display: inline-block;
-    font-size: 1.75rem;
-    font-weight: 400;
-  }
-}
+@import 'map';
+@import 'faq';
