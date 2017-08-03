@@ -1,9 +1,10 @@
 .faq {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 
   &__question {
     display: inline-block;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 
@@ -15,6 +16,18 @@
   }
 }
 
-.no-margin {
-  margin-top: 0;
+// .no-margin {
+//   margin-top: 0;
+// }
+
+@media(max-width: 625px) {
+  .faq {
+    &__question {
+      font-size: 1.25rem;
+    }
+
+    &__answer {
+      font-size: 1rem;
+    }
+  }
 }
