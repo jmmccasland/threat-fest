@@ -1,0 +1,54 @@
+// INFO
+.info {
+
+  > * + * {
+    margin-top: 2rem;
+  }
+
+  &__item {
+    &__title {
+      display: inline-block;
+      // margin-bottom: 1rem;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: lowercase;
+    }
+
+    &__description {
+      flex-basis: 50%;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 100;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .info__item {
+    &__title {
+      margin-bottom: 0.5rem;
+      font-size: 3rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .info__item {
+    &__title {
+      margin-bottom: 0.25rem;
+      font-size: 2rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}

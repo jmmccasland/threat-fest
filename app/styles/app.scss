@@ -1,29 +1,24 @@
-// @import 'yoga';
-// @import 'normalize';
+// Variables
+$c-black: #222;
+$c-white: #fefefe;
+$c-orange: #dd4224;
+$c-blue: #002f4b;
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+// Transparencies
+$t-orange: rgba(221, 66, 36, 0.35);
+$t-blue: rgba(0, 47, 75, 0.5);
+$t-black: rgba(0, 0, 0, 0.75);
+$t-white: rgba(255, 255, 255, 0.95);
+
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
-
-
-// resets
-body {
-  margin: 0;
-}
-
-p {
-  margin: 1rem;
-}
-
-
-// music player
-.music-player {
-  margin: 0;
-  width: 100%;
-  height: 3rem;
-  background: #6FC0DE;
-
-  > * {
-    margin: 0;
-  }
-}
+@import 'reset';
+@import 'layout';
+@import 'top-nav';
+@import 'menu';
+@import 'hero';
+@import 'info';
+@import 'grid';
+@import 'map';
+@import 'faq';

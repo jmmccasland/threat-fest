@@ -1,0 +1,75 @@
+// Grid
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem;
+
+  &__item {
+    position: relative;
+    width: calc(100% / 3 - 2rem);
+    height: 20rem;
+    margin: 1rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    // Object adjustments
+     > .object--top {
+      object-position: top;
+    }
+
+     > .object--center {
+      object-position: center;
+    }
+  }
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background: $c-black;
+  color: $c-white;
+
+  > p {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    // text-transform: lowercase;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .grid__item {
+    height: 17.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .grid__item {
+    width: calc(100% / 2 - 2rem);
+  }
+}
+
+@media (max-width: 765px) {
+  .grid__item {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .grid__item {
+    width: 100%;
+  }
+}
