@@ -24,13 +24,13 @@ let isOpen = false;
 spotifyBtn.addEventListener('click', () => {
   if (isOpen) {
     player.style.transform = 'translateY(-220px)';
-    buttonIcon.classList.remove('fa-arrow-down');
-    buttonIcon.classList.add('fa-arrow-up');
+    buttonIcon.classList.remove('fa-arrow-up');
+    buttonIcon.classList.add('fa-arrow-down');
     isOpen = !isOpen;
   } else {
     player.style.transform = 'translateY(0)';
-    buttonIcon.classList.remove('fa-arrow-up');
-    buttonIcon.classList.add('fa-arrow-down');
+    buttonIcon.classList.remove('fa-arrow-down');
+    buttonIcon.classList.add('fa-arrow-up');
     isOpen = !isOpen;
   }
 });
