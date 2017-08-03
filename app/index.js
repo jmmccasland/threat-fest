@@ -23,12 +23,12 @@ let isOpen = false;
 
 spotifyBtn.addEventListener('click', () => {
   if (isOpen) {
-    player.style.bottom = '-220px';
+    player.style.transform = 'translateY(-220px)';
     buttonIcon.classList.remove('fa-arrow-down');
     buttonIcon.classList.add('fa-arrow-up');
     isOpen = !isOpen;
   } else {
-    player.style.bottom = 0;
+    player.style.transform = 'translateY(0)';
     buttonIcon.classList.remove('fa-arrow-up');
     buttonIcon.classList.add('fa-arrow-down');
     isOpen = !isOpen;
