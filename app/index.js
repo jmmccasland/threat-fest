@@ -22,7 +22,7 @@ const buttonIcon = document.querySelector('.player__button__icon');
 let isOpen = false;
 
 spotifyBtn.addEventListener('click', () => {
-  if (isOpen) {
+  if (!isOpen) {
     player.style.transform = 'translateY(-220px)';
     buttonIcon.classList.remove('fa-arrow-up');
     buttonIcon.classList.add('fa-arrow-down');
