@@ -8,6 +8,7 @@
   &__item {
     &__title {
       display: inline-block;
+      // margin-bottom: 1rem;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 4rem;
       font-weight: bold;
@@ -16,6 +17,7 @@
 
     &__description {
       flex-basis: 50%;
+      margin: 0;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.5rem;
       font-weight: 100;
@@ -26,6 +28,7 @@
 @media (max-width: 900px) {
   .info__item {
     &__title {
+      margin-bottom: 0.5rem;
       font-size: 3rem;
     }
 
@@ -38,6 +41,7 @@
 @media (max-width: 625px) {
   .info__item {
     &__title {
+      margin-bottom: 0.25rem;
       font-size: 2rem;
     }
 
