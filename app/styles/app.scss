@@ -22,3 +22,38 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'grid';
 @import 'map';
 @import 'faq';
+
+.player { // player is 80px tall w/o tracklist
+  position: fixed;
+  bottom: -220px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 101;
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7.5px;
+    border: 0;
+    background: #282828;
+    color: $c-white;
+    font-size: 0.75rem;
+    font-weight: 100;
+    cursor: pointer;
+    z-index: 102;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__widget {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+  }
+}
