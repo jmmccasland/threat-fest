@@ -3,17 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./images/favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./images/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./images/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./images/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./images/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./images/favicon/mstile-310x310.png"  />
   <title>Threat Fest 2017</title>
   <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
   <div class="wrapper">
-        <!-- SPOTIFY -->
-        <div class="player">
-          <button class="player__button"><i class="player__button__icon fa fa-arrow-up" aria-hidden="true"></i> Toggle Tracklist</button>
-          <iframe class="player__widget" src="https://open.spotify.com/embed/user/1210506591/playlist/6ip58zmEx8bKsHcXSj4Xy3" frameborder="0" allowtransparency="true"></iframe>
-        </div>
+    <!-- SPOTIFY -->
+    <div class="player">
+      <button class="player__button"><i class="player__button__icon fa fa-arrow-up" aria-hidden="true"></i> Toggle Tracklist</button>
+      <iframe class="player__widget" src="https://open.spotify.com/embed/user/1210506591/playlist/6ip58zmEx8bKsHcXSj4Xy3" frameborder="0" allowtransparency="true"></iframe>
+    </div>
 
     <!-- TOP NAV -->
     <div class="section section--top-nav">
@@ -110,84 +130,128 @@
         zoom: 15,
         center: location,
         scrollwheel: false,
-        styles: [
-                { elementType: 'geometry', stylers: [{ color: '#222222' }] },
-                { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-                { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+        styles: [{
+            elementType: 'geometry',
+            stylers: [{
+              color: '#222222'
+            }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#242f3e'
+            }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#746855'
+            }]
+          },
           {
             featureType: 'administrative.locality',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#fefefe' }]
+            stylers: [{
+              color: '#fefefe'
+            }]
           },
           {
             featureType: 'poi',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#fefefe' }]
+            stylers: [{
+              color: '#fefefe'
+            }]
           },
           {
             featureType: 'poi.park',
             elementType: 'geometry',
-            stylers: [{ color: '#263c3f' }]
+            stylers: [{
+              color: '#263c3f'
+            }]
           },
           {
             featureType: 'poi.park',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#6b9a76' }]
+            stylers: [{
+              color: '#6b9a76'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'geometry',
-            stylers: [{ color: '#38414e' }]
+            stylers: [{
+              color: '#38414e'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'geometry.stroke',
-            stylers: [{ color: '#222222' }]
+            stylers: [{
+              color: '#222222'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#9ca5b3' }]
+            stylers: [{
+              color: '#9ca5b3'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'geometry',
-            stylers: [{ color: '#fefefe' }]
+            stylers: [{
+              color: '#fefefe'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'geometry.stroke',
-            stylers: [{ color: '002f4b' }]
+            stylers: [{
+              color: '002f4b'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#f3d19c' }]
+            stylers: [{
+              color: '#f3d19c'
+            }]
           },
           {
             featureType: 'transit',
             elementType: 'geometry',
-            stylers: [{ color: '#2f3948' }]
+            stylers: [{
+              color: '#2f3948'
+            }]
           },
           {
             featureType: 'transit.station',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#d59563' }]
+            stylers: [{
+              color: '#d59563'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'geometry',
-            stylers: [{ color: '#17263c' }]
+            stylers: [{
+              color: '#17263c'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'labels.text.fill',
-            stylers: [{ color: '#515c6d' }]
+            stylers: [{
+              color: '#515c6d'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'labels.text.stroke',
-            stylers: [{ color: '#17263c' }]
+            stylers: [{
+              color: '#17263c'
+            }]
           }
         ]
       });
@@ -200,15 +264,21 @@
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTa7xgGQMUvt6X2-9pz7geLhRUPJJ438A&callback=initMap" type="text/javascript"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-54333838-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-54333838-7', 'auto');
+    ga('send', 'pageview');
+  </script>
   <script src="/app.js" charset="utf-8"></script>
 </body>
 
