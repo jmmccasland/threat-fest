@@ -10,6 +10,7 @@
     "lint": "sass-lint",
     "esfix": "eslint src --fix && eslint tests --fix",
     "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist threatfest.com",
+    "test-deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist threat-fest.byjohnmichael.com",
     "setup:vue": "yarn add vue vue-router && yarn add --dev rollup-plugin-vue eslint-plugin-html"
   },
   "author": "",
